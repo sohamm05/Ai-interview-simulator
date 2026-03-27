@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:8000" });
+const API = axios.create({ baseURL: "https://ai-interview-simulator-v6s6.onrender.com" });
 
 export const uploadResume = (formData, sessionId) =>
   API.post(`/upload-resume?session_id=${sessionId}`, formData);
